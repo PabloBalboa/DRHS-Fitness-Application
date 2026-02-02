@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ocean Invaders</title>
+        <link href = "./main.css" rel="stylesheet">
+    </head>
+    <body>
+        <!--This is the navbar that each page has, just with differnet heading and links that corsipond to the actual page it is-->
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="hamburger">&#9776;</label>
+        <nav id="nav">
+            <button onclick="window.open('./rulesPage.html', '_blank')" class="nav-button">The Rules Page</button>
+            <button onclick="window.open('./choicePage.html', '_blank')" class="nav-button">The Points Specifications</button>
+            <button onclick="window.open('./page4GAME.html', '_blank')" class="nav-button">The GAME!</button>
+        </nav>
+        <header><h1>Welcome to Ocean Invaders Website!</h1></header>
+        <p style="padding-left: 30px;">On this website, we will be showing Ocean Invaders and all the little things that makes up this amazing game!</p>
+        <div class="flex-container">
+            <!-- Game Overview Section -->
+            <div id="overview">
+                <h3>Game Overview:</h3>
+                <p>This game is based in the ocean and the goal of the game is to collect as many fish as possible.
+                    Each level will be composed of different difficulty, or increased amount of points, the game getting more challenging as the levels go up.
+                    Each level will have different types of fish that give different amounts of points.
+                </p>
+                <p><a href="./rulesPage.html">*This will be explained in further detail on the rules page!</a></p>
+            </div>
+            
+            <!-- Inspiration Section (text only) -->
+            <div id="inspiration">
+                <h3>Inspiration around Ocean Invaders:</h3>
+                <p>When I was a child, my father and I went to a family friend's house and they had a game called 
+                    Space Invaders. My dad found a lot of joy playing this game and I could see that the game had 
+                    brought many memories that he is very fond of and brought great joy in his life. Because of this, 
+                    I have decided to create a game that has taken inspiration from the game, but has many twists and differences.
+                    I will further explain this in the rules page listed above.
+                </p>
+            </div>
+        </div>
+        
+        <!-- Image and YouTube link outside flex container -->
+        <div class="img_container">
+            <figure>
+                <img src="./Pictures/spaceInvaders.jpg" alt="Space Invaders Picture Not Available">
+                <figcaption>This is a picture of the first advertisement picture of the game which was released to the public in 1978!</figcaption>
+                <figcaption><a href="https://www.youtube.com/watch?v=bKNcsMR7Bmc" target="_blank">Video on Story of Space Invaders</a></figcaption>
+            </figure>
+        </div>
+    </body>
+</html>
