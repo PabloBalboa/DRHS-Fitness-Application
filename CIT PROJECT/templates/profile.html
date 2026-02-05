@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}Profile - Fitness App{% endblock %}
+
+{% block content %}
+<h2>Profile</h2>
+<form method="POST" action="{{ url_for('profile') }}">
+    <input type="text" name="name" value="John Doe">
+    <input type="number" name="age" value="25">
+    <input type="text" name="goal" value="Lose Weight">
+    <button type="submit" class="btn">Update Profile</button>
+</form>
+{% endblock %}

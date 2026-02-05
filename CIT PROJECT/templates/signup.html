@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}Sign Up - Fitness App{% endblock %}
+
+{% block content %}
+<div class="form-container">
+    <h2>Create Account</h2>
+    <form method="POST" action="{{ url_for('signup') }}">
+        <input type="text" name="name" placeholder="Full Name" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <input type="number" name="age" placeholder="Age">
+        <input type="text" name="goal" placeholder="Fitness Goal">
+        <button type="submit" class="btn">Sign Up</button>
+    </form>
+    <p>Already have an account? <a href="{{ url_for('login') }}">Login</a></p>
+</div>
+{% endblock %}
